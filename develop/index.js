@@ -1,5 +1,6 @@
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
+const fs = require('fs')
 
 // TODO: Create an array of questions for user input
 const questions = [
@@ -56,10 +57,37 @@ const questions = [
   ];
     
 // TODO: Create a function to write README file
-const fs = require('fs');
+function generateMarkdown(input) {
+  return `# ${input.title}
 
-function writeToFile(fileName, data) {
-  // Use fs.writeFile to write data to a file with the given fileName
+## Table of Contents 
+- [Description](#description)
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
+- [Contributing](#contributing)
+- [Testing](#testing)
+- [Questions](#questions)
+- [Credits](#credits)
+
+## Description 
+${input.description}
+## Installation 
+${input.installation}
+## Usage
+${input.usage}
+## License
+${input.license}
+## Contributing
+${input.contributing}
+## Testing
+${input.tests}
+## Questions 
+GitHub: [${input.github}](https://github.com/${input.github})
+Email: [${input.email}](mailto:${input.email})
+## Credits
+[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](code_of_conduct.md)
+`;
 }
 
 // TODO: Create a function to initialize app
