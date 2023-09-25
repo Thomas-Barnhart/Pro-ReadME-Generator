@@ -1,6 +1,8 @@
 // TODO: Include packages needed for this application
-const inquirer = require('inquirer');
-const fs = require('fs')
+const inquirer = require("inquirer");
+const fs = require('fs');
+const util = require('util');
+const generateMarkdown = require('./utils/generateMarkdown.js')
 
 // TODO: Create an array of questions for user input
 const questions = [
@@ -57,49 +59,34 @@ const questions = [
   ];
     
 // TODO: Create a function to write README file
-function generateMarkdown(input) {
-  return `# ${input.title}
+const writeFileAsync = util.promisify(fs.writeFile);
 
-## Table of Contents 
-- [Description](#description)
-- [Installation](#installation)
-- [Usage](#usage)
-- [License](#license)
-- [Contributing](#contributing)
-- [Testing](#testing)
-- [Questions](#questions)
-- [Credits](#credits)
+async function init() {
+  try {
+    const answers = await inquirer.prompt(questions);
+    const readmeContent = generateMarkdown(answers);
 
-## Description 
-${input.description}
-## Installation 
-${input.installation}
-## Usage
-${input.usage}
-## License
-${input.license}
-## Contributing
-${input.contributing}
-## Testing
-${input.tests}
-## Questions 
-GitHub: [${input.github}](https://github.com/${input.github})
-Email: [${input.email}](mailto:${input.email})
-## Credits
-[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](code_of_conduct.md)
-`;
+    await writeFileAsync('README.md', readmeContent, 'utf8');
+    console.log('YAY! You have created a README.md!');
+  } catch (error) {
+    console.error('Sorry, there was an error:', error);
+  }
 }
 
 // TODO: Create a function to initialize app
-function init() {
-    inquirer.prompt(questions).then((answers) => {
-      // Generate README content based on user's answers
-      const readmeContent = generateMarkdown(answers);
-  
-      // Write the README file
-      writeToFile('README.md', readmeContent);
-    });
+async function init() {
+  try {
+    const userAnswers = await inquirer.prompt(questions);
+    console.log('Thank you! The current data is being processed into your README.md: ', userAnswers);
+    // Get markdown template from generateMarkdown.js passing the answers as parameter
+    const myMarkdown = generateMarkdown(userAnswers);
+    console.log(myMarkdown);
+    // Write the README file after the markdown is made
+    await writeFileAsync('README1.md', myMarkdown);
+  } catch (error) {
+    console.log('Sorry there was an error.' + error);
   }
+};
 
 // Function call to initialize app
 init();
