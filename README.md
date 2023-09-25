@@ -37,7 +37,7 @@ Copy this project on your local computer - follow these next steps.
 
 Read up on the inquirer and npm packages. You will also need a project that requires a README, your email and your GitHub username.
 
-Clone the GitHub repository: git@github.<span></span>com:Thomas-Barnhart/Pro-README-Generator.git
+Clone the GitHub repository: git@github.com:Thomas-Barnhart/Pro-ReadME-Generator.git
 
 ### Installation
 
