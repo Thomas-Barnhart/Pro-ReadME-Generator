@@ -1,2 +1,3 @@
-# Pro-ReadME-Generator
-Need some help when making a ReadME while this generator will help you do just that
+# Professional README Generator Starter Code
+
+[How to create a Professional README](https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide)
