@@ -29,6 +29,8 @@ Picture this: you've just completed an incredible project, and now it's time to 
 
 Once you run the index.js file in Node.js, it initiates an interactive session, posing a sequence of questions pivotal for crafting your personalized README. To make things even clearer, I've thoughtfully included a comprehensive video guide in this section, illustrating the entire process. As a cherry on top, your freshly minted README will gracefully materialize right within the same directory as your trusty index.js file. Simple, seamless, and at your fingertips!
 
+![Gif of the Working Project](./images/Gif-of-working-project.gif)
+
 ## Start Your Own
 
 Copy this project on your local computer - follow these next steps.
