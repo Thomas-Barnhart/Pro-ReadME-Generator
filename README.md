@@ -23,7 +23,8 @@
 
 Picture this: you've just completed an incredible project, and now it's time to create a top-notch README to showcase your hard work. That's where this comes in! My README generator will walk you through the process, prompting you with friendly questions about your project, such as its title, a description, contribution guidelines, and how others can use it effectively.
 
-![](./Develop/images/Screenshot%20of%20Terminal.png) ![](./Develop/images/Screenshot%20of%20Created%20ReadME.png)
+![Screenshot of Terminal](./Develop/images/Screenshot%20of%20Terminal.png)
+![Screenshot of Created README](./Develop/images/Screenshot%20of%20Created%20ReadME.png)
 
 ### Usage
 
@@ -37,7 +38,7 @@ Copy this project on your local computer - follow these next steps.
 
 Read up on the inquirer and npm packages. You will also need a project that requires a README, your email and your GitHub username.
 
-Clone the GitHub repository: git@github.<span></span>com:Thomas-Barnhart/Pro-README-Generator.git
+Clone the GitHub repository: git@github.com:Thomas-Barnhart/Pro-ReadME-Generator.git
 
 ### Installation
 
