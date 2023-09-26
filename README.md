@@ -23,8 +23,7 @@
 
 Picture this: you've just completed an incredible project, and now it's time to create a top-notch README to showcase your hard work. That's where this comes in! My README generator will walk you through the process, prompting you with friendly questions about your project, such as its title, a description, contribution guidelines, and how others can use it effectively.
 
-![Screenshot of Terminal](./Develop/images/Screenshot%20of%20Terminal.png)
-![Screenshot of Created README](./Develop/images/Screenshot%20of%20Created%20ReadME.png)
+![Screenshot of Terminal](./Develop/images/Screenshot-of-Terminal.png) ![Screenshot of Created README](./Develop/images/Screenshot-of-Created-ReadME.png)
 
 ### Usage
 
