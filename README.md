@@ -47,7 +47,7 @@ Begin by forking this project to your GitHub account, and then smoothly clone th
 
 Currently no test has been setup for this application.
 
-### MIT License
+### License
 
 This is a brief and permissive license that necessitates only the retention of copyright and license notices. It allows the distribution of licensed works, modifications, and larger creations under varied terms, even without sharing the source code.
 
